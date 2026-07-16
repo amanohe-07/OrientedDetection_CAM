@@ -1,0 +1,20 @@
+{
+  "source_root": "/content/modelscope-cache/datasets/yolo_master/DOTAv1.zip",
+  "prepared_root": "/content/dota_work/dota_patches",
+  "output_root": "/content/dota_ship",
+  "ship_class_id": 1,
+  "crop_size": 1024,
+  "gap": 200,
+  "splits": {
+    "train": {
+      "positives": 1869,
+      "negatives": 467,
+      "objects": 57616
+    },
+    "val": {
+      "positives": 480,
+      "negatives": 120,
+      "objects": 14152
+    }
+  }
+}

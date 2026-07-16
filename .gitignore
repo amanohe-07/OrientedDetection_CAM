@@ -1,0 +1,73 @@
+# Python environments and caches
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.coverage
+
+# Node dependencies and generated builds
+frontend/node_modules/
+frontend/dist/
+frontend/node_modules/.vite-temp/
+
+# Local configuration and logs
+.env
+*.log
+*.tmp
+
+# Runtime results: keep only compact experiment evidence
+artifacts/*
+!artifacts/.gitkeep
+!artifacts/colab-evaluation.json
+!artifacts/desktop-*.png
+!artifacts/mobile-*.png
+!artifacts/visual-check.mjs
+!artifacts/cams/
+artifacts/cams/*
+!artifacts/cams/*.jpg
+
+# Model weights: keep the final deployable model
+weights/*
+!weights/.gitkeep
+!weights/best.pt
+
+# Dataset: keep configuration, manifest and visual previews only
+datasets/*
+!datasets/.gitkeep
+!datasets/dota_ship/
+datasets/dota_ship/*
+!datasets/dota_ship/dota_ship.yaml
+!datasets/dota_ship/manifest.json
+!datasets/dota_ship/previews/
+datasets/dota_ship/previews/*
+!datasets/dota_ship/previews/*.jpg
+!datasets/dota_ship/previews/*.png
+
+# Training outputs: keep curves and representative validation evidence
+runs/*
+!runs/dota_ship/
+runs/dota_ship/*
+!runs/dota_ship/yolov8n-obb-colab/
+runs/dota_ship/yolov8n-obb-colab/*
+!runs/dota_ship/yolov8n-obb-colab/args.yaml
+!runs/dota_ship/yolov8n-obb-colab/results.csv
+!runs/dota_ship/yolov8n-obb-colab/results.png
+!runs/dota_ship/yolov8n-obb-colab/BoxF1_curve.png
+!runs/dota_ship/yolov8n-obb-colab/BoxPR_curve.png
+!runs/dota_ship/yolov8n-obb-colab/BoxP_curve.png
+!runs/dota_ship/yolov8n-obb-colab/BoxR_curve.png
+!runs/dota_ship/yolov8n-obb-colab/confusion_matrix.png
+!runs/dota_ship/yolov8n-obb-colab/confusion_matrix_normalized.png
+!runs/dota_ship/yolov8n-obb-colab/labels.jpg
+!runs/dota_ship/yolov8n-obb-colab/val_batch0_labels.jpg
+!runs/dota_ship/yolov8n-obb-colab/val_batch0_pred.jpg
+
+# IDE, agent and operating-system metadata
+.agents/
+.codex/
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db

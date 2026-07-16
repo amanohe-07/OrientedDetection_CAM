@@ -1,0 +1,8 @@
+path: datasets/dota_ship
+train: images/train
+val: images/val
+test: images/val
+
+names:
+  0: ship
+
