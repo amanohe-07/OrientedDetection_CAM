@@ -88,10 +88,9 @@ GitHub 仓库用于提交和部署展示，包含完整前后端源码、最终 
 需要压缩包时，不必另行维护一份容易过期的 ZIP：在 GitHub 仓库页面点击
 `Code -> Download ZIP` 即可下载与当前提交完全一致的源码包。
 
-### 3.3 课程离线提交
+### 3.3 离线数据集
 
-GitHub 源码包不包含完整 DOTA Ship 图像。若课程要求在无网络条件下复现，应同时提交
-以下两个压缩包，不能只提供数据集下载说明：
+GitHub 源码包不包含完整 DOTA Ship 图像。若在无网络条件下复现，应下载以下两个压缩包：
 
 ```text
 OrientedDetection_CAM-main.zip       GitHub 下载的源码包
@@ -120,12 +119,6 @@ Expand-Archive datasets\dota_ship-subset.zip `
   -Force
 python scripts/configure_dota_ship.py datasets/dota_ship
 ```
-
-随后按第 4 节安装依赖并按第 6 节启动。Python 和 Node 依赖没有打入源码包；通常由
-`requirements*.txt` 与 `frontend/package-lock.json` 锁定并安装。若“完全离线”还包括
-禁止安装依赖时联网，则需在目标 Windows/Python/Node 版本下另行准备 Python wheelhouse
-和 npm 离线缓存；不建议直接提交当前电脑的 `.venv` 或 `node_modules`，因为体积大且
-跨电脑、跨路径不可靠。
 
 ## 4. 环境要求
 
